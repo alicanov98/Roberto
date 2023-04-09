@@ -1,0 +1,24 @@
+@mixin primaryBtn($bgClr, $fontClr){
+    min-width: 18.271%;
+    height: 46px;
+    padding: 0 40px;
+    line-height: 46px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 2px;
+    background-color:$bgClr ;
+    cursor: pointer;
+    transition: color .5s ease-in-out,background-color .5s ease-in-out,box-shadow .15s ease-in-out;
+    a{
+        color:$fontClr ;
+    }
+    &:hover{
+        box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+        background-color:$fontClr;
+        font-weight: 500;
+        a{
+            color:$bgClr;
+        }
+    }
+}
+

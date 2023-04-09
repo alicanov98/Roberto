@@ -1,0 +1,536 @@
+main {
+  //* --------------------------- Home Section Start --------------------------- */
+  .homeArea {
+    width: 100%;
+    height: 300px;
+    background-image: url(../image/area-16.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    &:after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: rgba(14, 39, 55, 0.7);
+    }
+    .container {
+      .title {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+          font-size: 48px;
+          line-height: 1.5;
+          font-weight: 500;
+          margin-bottom: 5px;
+          color: #ffffff;
+        }
+        .titleContent {
+          a {
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-weight: 500;
+            transition: 0.5s ease;
+            &:hover {
+              color: #1cc3b2;
+            }
+            &:first-child {
+              margin-right: 15px;
+            }
+            &:last-child {
+              margin-left: 15px;
+            }
+          }
+          span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  //* ---------------------------  Home Section End --------------------------- */
+  //* --------------------------- Single Blog Section Start -------------------------- */
+  .singleBlog {
+    width: 100%;
+    padding-top: 100px;
+    .container {
+      .sinBlCont {
+        width: 102.77%;
+        display: flex;
+        .left {
+          display: flex;
+          flex-direction: column;
+          flex: 0 0 66.66%;
+          max-width: 66.66%;
+          padding: 0 15px;
+          .blogImage {
+            margin-bottom: 50px;
+            img {
+              max-width: 100%;
+            }
+          }
+          .blogText {
+            p {
+              font-size: 16px;
+              margin-bottom: 30px;
+              line-height: 1.7;
+              color: #636a76;
+            }
+            .blogStatus {
+              width: 100%;
+              margin-bottom: 30px;
+              margin-top: 30px;
+              display: flex;
+              .statusIcon {
+                width: 28.61%;
+              }
+              .statusText {
+                h5 {
+                  font-size: 20px;
+                  margin-bottom: 10px;
+                  color: #707070;
+                  font-style: italic;
+                  line-height: 1.5;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+          .blogShare {
+            width: 100%;
+            border-top: 1px solid #ebebeb;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .shareName {
+              width: 50%;
+              a {
+                margin: 3px;
+                color: #2a303b;
+                cursor: pointer;
+              }
+            }
+            .shareLink {
+              display: flex;
+              span {
+                margin-right: 20px;
+                color: #2a303b;
+                line-height: 1.7;
+              }
+              .shareSocial {
+                display: flex;
+                gap: 20px;
+                a {
+                  color: #2a303b;
+                  transition: 0.5s ease;
+                  &:hover {
+                    color: #1cc3b2;
+                  }
+                }
+              }
+            }
+          }
+          .blogComment {
+            width: 100%;
+            margin-bottom: 16px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #ebebeb;
+            h2 {
+              margin-bottom: 30px;
+              font-size: 22px;
+              color: #2a303b;
+              line-height: 1.3;
+              font-weight: 500;
+            }
+            .commentCard {
+              width: 100%;
+              display: flex;
+              margin-bottom: 30px;
+              .person {
+                margin-right: 20px;
+                img {
+                  width: 70px;
+                  border-radius: 50%;
+                }
+              }
+              .cardCont {
+                .data {
+                  color: #1cc3b2;
+                  font-size: 12px;
+                  text-transform: uppercase;
+                  display: block;
+                  margin-bottom: 5px;
+                  font-weight: 600;
+                }
+                h5 {
+                  font-size: 20px;
+                  color: #2a303b;
+                  line-height: 1.3;
+                  font-weight: 500;
+                  margin-bottom: 5px;
+                }
+                p {
+                  color: #636a76;
+                  font-size: 16px;
+                  line-height: 1.7;
+                  margin-bottom: 16px;
+                }
+                .comBtn {
+                  padding: 5px 25px 3px;
+                  font-size: 12px;
+                  font-weight: 600;
+                  border: 1px solid #ebebeb;
+                  border-radius: 30px;
+                  color: #2a303b;
+                  transition: 0.5s ease;
+                  &:hover {
+                    background-color: #1cc3b2;
+                    color: #ffff;
+                  }
+                }
+              }
+              &:nth-child(3) {
+                margin-left: 50px;
+              }
+            }
+          }
+          .blogForm {
+            margin-top: 80px;
+            margin-bottom: 100px;
+            h2 {
+              color: #2a303b;
+              line-height: 1.3;
+              font-weight: 500;
+              margin-bottom: 30px;
+              font-size: 22px;
+            }
+            form {
+              padding: 0 15px;
+              input {
+                width: 100%;
+                height: 50px;
+                padding: 0 20px;
+                border-radius: 2px;
+                margin-bottom: 30px;
+                color: #afb4bf;
+                font-size: 14px;
+                border: 1px solid #ebebeb;
+                outline: none;
+                background-color: #fff;
+                line-height: 1.5;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                &:focus {
+                  border-color: #1cc3b2;
+                }
+                &::placeholder {
+                  font-size: 13px;
+                  font-weight: 400;
+                  line-height: 1.7;
+                  letter-spacing: 1px;
+                }
+              }
+              textarea {
+                height: 150px;
+                padding: 20px;
+                border-radius: 2px;
+                color: #afb4bf;
+                font-size: 14px;
+                outline: none;
+                margin-bottom: 30px;
+                border: 1px solid #ebebeb;
+                width: 100%;
+                resize: vertical;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                &:focus {
+                  box-shadow: none;
+                  border-color: #1cc3b2;
+                }
+                &::placeholder {
+                  font-size: 13px;
+                  font-weight: 400;
+                  line-height: 1.7;
+                  letter-spacing: 1px;
+                }
+              }
+              .blogBtn {
+                width: 28.633%;
+                @include primaryBtn(#1cc3b2, #fff);
+              }
+            }
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          flex: 0 0 33.3333%;
+          max-width: 33.3333%;
+          padding: 0 15px;
+          .cardBoxRight {
+            max-width: 100%;
+            padding-left: 24px;
+            .newsLetter {
+              padding: 40px 30px;
+              background-color: #e8f1f8;
+              border-radius: 4px;
+              margin-bottom: 100px;
+              h5 {
+                font-size: 22px;
+                color: #2a303b;
+                line-height: 1.3;
+                font-weight: 500;
+                margin-bottom: 8px;
+              }
+              p {
+                line-height: 1.7;
+                color: #636a76;
+                margin-bottom: 16px;
+              }
+              form {
+                input {
+                  width: 100%;
+                  height: 46px;
+                  border: 1px solid #ebebeb;
+                  background-color: #ffffff;
+                  color: #636a76;
+                  font-size: 13px;
+                  margin-bottom: 20px;
+                  padding: 6px 12px;
+                  font-weight: 400;
+                  line-height: 1.5;
+                  outline: none;
+                  border-radius: 4px;
+                  transition: border-color 0.15s ease-in-out,
+                    box-shadow 0.15s ease-in-out;
+                  &:focus {
+                    box-shadow: none;
+                    border-color: #1cc3b2;
+                  }
+                  &::placeholder {
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 1.7;
+                    letter-spacing: 1px;
+                  }
+                }
+              }
+              .newsBtn {
+                @include primaryBtn(#1cc3b2, #fff);
+              }
+            }
+            .recent {
+              margin-bottom: 100px;
+              h4 {
+                font-size: 22px;
+                border-bottom: 1px solid #ebebeb;
+                font-weight: 500;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                color: #2a303b;
+                line-height: 1.3;
+              }
+              .recCardBox {
+                .cardRec {
+                  display: flex;
+                  margin-bottom: 30px;
+                  .recImg {
+                    width: 110px;
+                    margin-right: 20px;
+                    a {
+                      img {
+                        border-radius: 3px;
+                        cursor: pointer;
+                      }
+                    }
+                  }
+                  .redCardrow {
+                    .recCardCont {
+                      margin-bottom: 5px;
+                      span,
+                      a {
+                        font-size: 12px;
+                        color: #1cc3b2;
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: 0.5s ease;
+                        &:hover {
+                          color: #2a303b;
+                        }
+                      }
+                    }
+                    a {
+                      font-size: 16px;
+                      color: #2a303b;
+                      font-weight: 500;
+                      line-height: 1.5;
+                      cursor: pointer;
+                      transition: 0.5s ease;
+                      &:hover {
+                        color: #1cc3b2;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .tags {
+              width: 100%;
+              margin-bottom: 100px;
+              h4 {
+                font-size: 22px;
+                line-height: 1.3;
+                color: #2a303b;
+                padding-bottom: 10px;
+                font-weight: 500;
+                border-bottom: 1px solid #ebebeb;
+                margin-bottom: 30px;
+              }
+              .tagList {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -3px;
+                .tagItem {
+                  margin: 3px;
+                  float: left;
+                  a {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #afb4bf;
+                    cursor: pointer;
+                    line-height: 1.5;
+                    transition: 0.5s ease;
+                    &:hover {
+                      color: #1cc3b2;
+                    }
+                  }
+                }
+              }
+            }
+            .instagram{
+                width: 100%;
+  h4{
+    font-size: 22px;
+    display: block;
+    border-bottom: 1px solid #ebebeb;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  .instaImg{
+    width: 100%;
+    .instaList{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .instaItem{
+           a{
+            width: 100%;
+            img{
+                width: 102%;
+            }
+           }
+            
+        }
+    }
+  }
+            }
+          }
+        }
+      }
+    }
+  }
+  //* --------------------------- Single Blog Section End-------------------------- */
+  //* ------------------------------Contact Section Start ------------------------------- */
+  .contact {
+    margin-top: 100px;
+    width: 100%;
+    .container {
+      .contactUs {
+        width: 100%;
+        height: 177px;
+        background-image: url(../image/city.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+        &:after {
+          content: "";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background-color: rgba(14, 39, 55, 0.7);
+        }
+        .contactTitle {
+          width: 100%;
+          h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-weight: 500;
+            color: #ffffff;
+          }
+          h6 {
+            color: #ffffff;
+            line-height: 1.3;
+            font-weight: 500;
+            font-size: 16px;
+            a {
+              color: #ffffff;
+              transition: 0.5s ease;
+              &:hover {
+                color: #1cc3b2;
+              }
+            }
+          }
+        }
+        .contactBtn {
+          @include primaryBtn(#1cc3b2, #ffff);
+        }
+      }
+    }
+  }
+  //* ------------------------------Contact Section End ------------------------------- */
+  .partiner {
+    width: 100%;
+    .container {
+      .partContent {
+        width: 100%;
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        a {
+          img {
+            max-height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
