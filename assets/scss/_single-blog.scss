@@ -62,41 +62,6 @@ main {
       }
     }
   }
-  @media (max-width: 1200px) {
-    .homeArea {
-      width: 100%;
-      .container {
-        .title {
-          h2 {
-            font-size: 36px;
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 992px) {
-    .homeArea {
-      width: 100%;
-      .container {
-        .title {
-          text-align: center;
-        }
-      }
-    }
-  }
-  @media(max-width:768px){
-    .homeArea {
-      height: 200px;
-      .container {
-        .title {
-          height: 200px;
-          h2 {
-            font-size: 24px;
-          }
-        }
-      }
-    }
-  }
   //* ---------------------------  Home Section End --------------------------- */
   //* --------------------------- Single Blog Section Start -------------------------- */
   .singleBlog {
@@ -495,74 +460,6 @@ main {
       }
     }
   }
-  @media (max-width: 768px),(max-width: 992px) {
-    .singleBlog {
-      .container {
-        .sinBlCont {
-          flex-wrap: wrap;
-          justify-content: center;
-          .left {
-            flex: 0 0 100%;
-            max-width: 100%;
-            .blogShare {
-              .shareLink {
-                span {
-                  margin-right: 10px;
-                }
-                .shareSocial {
-                  gap: 10px;
-                  .socialItem {
-                    a {
-                      font-size: 16px;
-                    }
-                  }
-                }
-              }
-            }
-            .blogComment {
-              margin-bottom: 0;
-              h2 {
-                font-size: 24px;
-              }
-              .commentCard {
-                .person {
-                  margin-right: 10px;
-                  img {
-                    width: 50px;
-                  }
-                }
-                .cardCont {
-                  h5 {
-                    font-size: 16px;
-                  }
-                  p {
-                    font-size: 14px;
-                  }
-                }
-                &:nth-child(3) {
-                  margin-left: 20px;
-                }
-              }
-            }
-            .blogForm {
-              h2 {
-                font-size: 24px;
-              }
-              form {
-                .blogBtn {
-                  width: 40.563%;
-                }
-              }
-            }
-          }
-          .right {
-            flex: 0 0 74%;
-            max-width: 74%;
-          }
-        }
-      }
-    }
-  }
   //* --------------------------- Single Blog Section End-------------------------- */
   //* ------------------------------Contact Section Start ------------------------------- */
   .contact {
@@ -624,22 +521,6 @@ main {
       }
     }
   }
-  @media(max-width: 768px),(max-width: 992px){
-    .contact {
-      .container {
-        .contactUs {
-          height: 295px;
-          display: flex;
-          flex-wrap: wrap;
-          .resBtn{
-            width: 100%;
-            display: flex;
-            justify-content: end;
-          }
-        }
-      }
-    }
-  }
   //* ------------------------------Contact Section End ------------------------------- */
   .partiner {
     width: 100%;
@@ -657,14 +538,137 @@ main {
       }
     }
   }
-  @media(max-width: 768px),(max-width: 992px){
-    .partiner {
-      .container {
-        .partContent {
-          a {
-            img {
-              max-height: 30px;
+//* ------------------------------- Responsive ------------------------------- */
+@media (max-width: 1200px) {
+  .homeArea {
+    width: 100%;
+    .container {
+      .title {
+        h2 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .homeArea {
+    width: 100%;
+    z-index: -1;
+    .container {
+      .title {
+        text-align: center;
+      }
+    }
+  }
+}
+@media(max-width:768px){
+  .homeArea {
+    height: 200px;
+    z-index: -1;
+    .container {
+      .title {
+        height: 200px;
+        h2 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px),(max-width: 992px) {
+  .singleBlog {
+    .container {
+      .sinBlCont {
+        flex-wrap: wrap;
+        justify-content: center;
+        .left {
+          flex: 0 0 100%;
+          max-width: 100%;
+          .blogShare {
+            .shareLink {
+              span {
+                margin-right: 10px;
+              }
+              .shareSocial {
+                gap: 10px;
+                .socialItem {
+                  a {
+                    font-size: 16px;
+                  }
+                }
+              }
             }
+          }
+          .blogComment {
+            margin-bottom: 0;
+            h2 {
+              font-size: 24px;
+            }
+            .commentCard {
+              .person {
+                margin-right: 10px;
+                img {
+                  width: 50px;
+                }
+              }
+              .cardCont {
+                h5 {
+                  font-size: 16px;
+                }
+                p {
+                  font-size: 14px;
+                }
+              }
+              &:nth-child(3) {
+                margin-left: 20px;
+              }
+            }
+          }
+          .blogForm {
+            h2 {
+              font-size: 24px;
+            }
+            form {
+              .blogBtn {
+                width: 40.563%;
+              }
+            }
+          }
+        }
+        .right {
+          flex: 0 0 74%;
+          max-width: 74%;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 768px),(max-width: 992px){
+  .contact {
+    .container {
+      .contactUs {
+        height: 295px;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: -1;
+        .resBtn{
+          width: 100%;
+          display: flex;
+          justify-content: end;
+        }
+      }
+    }
+  }
+}
+}
+@media(max-width: 768px),(max-width: 992px){
+  .partiner {
+    .container {
+      .partContent {
+        a {
+          img {
+            max-height: 30px;
           }
         }
       }

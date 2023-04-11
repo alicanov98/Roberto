@@ -7,7 +7,14 @@
     text-decoration: none;
     list-style: none;
 }
-
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
 .container{
     width: 100%;
 padding: 0 15px;
@@ -38,14 +45,6 @@ margin: 0 auto;
 .row{
     width: 100%;
     display: flex;
-}
-body{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
 }
 
 .title{
