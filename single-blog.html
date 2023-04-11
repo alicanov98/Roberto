@@ -19,6 +19,10 @@
           <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i>
             info.colorlib@gmail.com</a>
         </div>
+        <div class="responsInfo">
+          <a href="tel:1234567891230"><i class="fa-solid fa-phone"></i></a>
+          <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a>
+        </div>
         <ul class="socialList">
           <li class="socialItem">
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -37,52 +41,55 @@
     </div>
     <div class="downHeader">
       <div class="container">
-        <nav>
+        <div class="row">
           <a class="logo" href="./index.html"><img src="./assets/image/logo.png.webp" alt="logo" /></a>
-          <ul class="navList">
-            <li class="navItem"><a href="./index.html">Home</a></li>
-            <li class="navItem"><a href="#">Rooms</a></li>
-            <li class="navItem"><a href="#">About Us</a></li>
-            <li class="navItem">
-              <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
-              <ul class="pageList">
-                <li class="pageItem"><a href="./index.html">- Home</a></li>
-                <li class="pageItem"><a href="#">- Rooms</a></li>
-                <li class="pageItem"><a href="#">- Single Rooms</a></li>
-                <li class="pageItem"><a href="#">- About Us</a></li>
-                <li class="pageItem"><a href="#">- Blog</a></li>
-                <li class="pageItem"><a href="./single-blog.html">- Single Blog</a></li>
-                <li class="pageItem"><a href="#">- Contact</a></li>
-                <li class="pageItem" id="dropdown">
-                  <a href="#">- Dropdown <i class="fa-solid fa-chevron-right"></i></a>
-                  <ul class="dropdownList">
-                    <li class="dropdownItem">
-                      <a href="#">-Dropdown Item</a>
-                    </li>
-                    <li class="dropdownItem">
-                      <a href="#">-Dropdown Item</a>
-                    </li>
-                    <li class="dropdownItem">
-                      <a href="#">-Dropdown Item</a>
-                    </li>
-                    <li class="dropdownItem">
-                      <a href="#">-Dropdown Item </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="navItem"><a href="#">News</a></li>
-            <li class="navItem"><a href="#">Contact</a></li>
-          </ul>
-          <div class="searchIcon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="bookBtn">
-            <a class="btn" href="#">Book Now <i class="fa-solid fa-right-long"></i></a>
-          </div>
-        </nav>
-      </div>
+   <div class="navBar">
+     <nav>
+       <ul class="navList">
+         <li class="navItem"><a href="./index.html">Home</a></li>
+         <li class="navItem"><a href="#">Rooms</a></li>
+         <li class="navItem"><a href="#">About Us</a></li>
+         <li class="navItem">
+           <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+           <ul class="pageList">
+             <li class="pageItem"><a href="./index.html">- Home</a></li>
+             <li class="pageItem"><a href="#">- Rooms</a></li>
+             <li class="pageItem"><a href="#">- Single Rooms</a></li>
+             <li class="pageItem"><a href="#">- About Us</a></li>
+             <li class="pageItem"><a href="#">- Blog</a></li>
+             <li class="pageItem"><a href="./single-blog.html">- Single Blog</a></li>
+             <li class="pageItem"><a href="#">- Contact</a></li>
+             <li class="pageItem" id="dropdown">
+               <a href="#">- Dropdown <i class="fa-solid fa-chevron-right"></i></a>
+               <ul class="dropdownList">
+                 <li class="dropdownItem">
+                   <a href="#">-Dropdown Item</a>
+                 </li>
+                 <li class="dropdownItem">
+                   <a href="#">-Dropdown Item</a>
+                 </li>
+                 <li class="dropdownItem">
+                   <a href="#">-Dropdown Item</a>
+                 </li>
+                 <li class="dropdownItem">
+                   <a href="#">-Dropdown Item </a>
+                 </li>
+               </ul>
+             </li>
+           </ul>
+         </li>
+         <li class="navItem"><a href="#">News</a></li>
+         <li class="navItem"><a href="#">Contact</a></li>
+         <li class="navItem icon"><i class="fa-solid fa-magnifying-glass"></i></li>
+       </ul>
+     </nav>
+     <a class="btn" href="#">Book Now <i class="fa-solid fa-right-long"></i></a>
+   </div>
+   <div class="barsIcon">
+    <i class="fa-solid fa-bars"></i>
+   </div>
+   </div>
+        </div>
     </div>
   </header>
   <!--* ---------------------------- END HEADER ----------------------------- -->
@@ -195,7 +202,8 @@
                 <div class="cardCont">
                   <a class="data" href="#">27 AUG 2022</a>
                   <h5>Lander Tea</h5>
-                  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
+                  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed
+                    quia non numquam eius modi</p>
                   <a class="comBtn" href="#">LIKE</a>
                   <a class="comBtn" href="#">REPLY</a>
                 </div>
@@ -204,13 +212,13 @@
             <div class="blogForm">
               <h2>Leave A Comment</h2>
               <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Websites">
-                <textarea placeholder="Start the discussion.."></textarea>
-                <div class="blogBtn">
-                  <a href="#">Post Comment</a>
-                </div>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Websites" required>
+                <textarea placeholder="Start the discussion.." required></textarea>
+                <button class="blogBtn" type="submit">
+                  Post Comment
+                </button>
               </form>
             </div>
           </div>
@@ -220,10 +228,10 @@
                 <h5>Newsletter</h5>
                 <p>Subscribe our newsletter gor get notification new updates.</p>
                 <form>
-                  <input type="email" placeholder="Enter your email...">
-                  <div class="newsBtn">
-                    <a href="#">Subscribe</a>
-                  </div>
+                  <input type="email" placeholder="Enter your email..." required>
+                  <button type="submit" class="newsBtn">
+                    Subscribe
+                  </button>
                 </form>
               </div>
               <div class="recent">
@@ -231,8 +239,8 @@
                 <div class="recCardBox">
                   <div class="cardRec">
                     <div class="recImg">
-                <a href="#"><img src="./assets/image/29.jpg.webp" alt="recent">
-                </a>
+                      <a href="#"><img src="./assets/image/29.jpg.webp" alt="recent">
+                      </a>
                     </div>
                     <div class="redCardrow">
                       <div class="recCardCont">
@@ -242,49 +250,49 @@
                       </div>
                       <a href="#">Proven Techniques Help You Herbal Breast</a>
                     </div>
+                  </div>
+                  <div class="cardRec">
+                    <div class="recImg">
+                      <a href="#"><img src="./assets/image/30.jpg.webp" alt="recent">
+                      </a>
                     </div>
-                    <div class="cardRec">
-                      <div class="recImg">
-                        <a href="#"><img src="./assets/image/30.jpg.webp" alt="recent">
-                        </a>
+                    <div class="redCardrow">
+                      <div class="recCardCont">
+                        <a href="#">JAN 29, 2019</a>
+                        <span>/</span>
+                        <a href="#">EVENT</a>
                       </div>
-                      <div class="redCardrow">
-                        <div class="recCardCont">
-                          <a href="#">JAN 29, 2019</a>
-                          <span>/</span>
-                          <a href="#">EVENT</a>
-                        </div>
-                        <a href="#">Cooking On A George Foreman Grill</a>
-                      </div>
+                      <a href="#">Cooking On A George Foreman Grill</a>
                     </div>
-                    <div class="cardRec">
-                      <div class="recImg">
-                        <a href="#"><img src="./assets/image/31.jpg.webp" alt="recent">
-                        </a>
-                      </div>
-                      <div class="redCardrow">
-                        <div class="recCardCont">
-                          <a href="#">JAN 29, 2019</a>
-                          <span>/</span>
-                          <a href="#">EVENT</a>
-                        </div>
-                        <a href="#">Selecting The Right Hotel</a>
-                      </div>
+                  </div>
+                  <div class="cardRec">
+                    <div class="recImg">
+                      <a href="#"><img src="./assets/image/31.jpg.webp" alt="recent">
+                      </a>
                     </div>
-                    <div class="cardRec">
-                      <div class="recImg">
-                  <a href="#"><img src="./assets/image/32.jpg.webp" alt="recent">
-                  </a>
+                    <div class="redCardrow">
+                      <div class="recCardCont">
+                        <a href="#">JAN 29, 2019</a>
+                        <span>/</span>
+                        <a href="#">EVENT</a>
                       </div>
-                      <div class="redCardrow">
-                        <div class="recCardCont">
-                          <a href="#">JAN 29, 2019</a>
-                          <span>/</span>
-                          <a href="#">EVENT</a>
-                        </div>
-                        <a href="#">Comment Importance Of Human Life </a>
+                      <a href="#">Selecting The Right Hotel</a>
+                    </div>
+                  </div>
+                  <div class="cardRec">
+                    <div class="recImg">
+                      <a href="#"><img src="./assets/image/32.jpg.webp" alt="recent">
+                      </a>
+                    </div>
+                    <div class="redCardrow">
+                      <div class="recCardCont">
+                        <a href="#">JAN 29, 2019</a>
+                        <span>/</span>
+                        <a href="#">EVENT</a>
                       </div>
-                      </div>
+                      <a href="#">Comment Importance Of Human Life </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="tags">
@@ -330,8 +338,10 @@
             <h2>Contact us now!</h2>
             <h6>Contact <a href="tel:123456789999">(+12) 345-678-9999</a> to book directly or for advice</h6>
           </div>
-          <div class="contactBtn">
-            <a href="#">Contact Now</a>
+          <div class="resBtn">
+            <div class="contactBtn">
+              <a href="#">Contact Now</a>
+            </div>
           </div>
         </div>
       </div>
@@ -397,8 +407,8 @@
           <h5 class="title">Subscribe Newsletter</h5>
           <p>Subscribe our newsletter gor get notification about new updates.</p>
           <form class="letterForm">
-            <input type="email" placeholder="Enter your email...">
-            <button class="inputBtn"><i class="fa-solid fa-paper-plane"></i></button>
+            <input type="email" placeholder="Enter your email..." required>
+            <button type="submit" class="inputBtn"><i class="fa-solid fa-paper-plane"></i></button>
           </form>
         </div>
       </div>

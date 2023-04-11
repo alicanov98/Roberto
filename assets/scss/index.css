@@ -8,9 +8,34 @@
 }
 
 .container {
-  width: 75%;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.row {
+  width: 100%;
+  display: flex;
 }
 
 body {
@@ -40,10 +65,10 @@ header .infoBar {
 }
 header .infoBar .container {
   display: flex;
+  justify-content: space-between;
   height: 100%;
 }
 header .infoBar .container .info {
-  width: 50%;
   display: flex;
   align-items: center;
 }
@@ -64,8 +89,10 @@ header .infoBar .container .info a i {
 header .infoBar .container .info a:hover {
   color: #afb4bf;
 }
+header .infoBar .container .responsInfo {
+  display: none;
+}
 header .infoBar .container .socialList {
-  width: 50%;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -89,18 +116,26 @@ header .downHeader {
   width: 100%;
   border-bottom: 1px solid;
 }
-header .downHeader .container nav {
-  width: 100%;
+header .downHeader .container .row {
+  align-items: center;
+  justify-content: space-between;
+}
+header .downHeader .container .row .logo {
+  width: 145px;
+}
+header .downHeader .container .row .navBar {
+  display: flex;
+}
+header .downHeader .container .row .navBar nav {
   height: 80px;
   display: flex;
   align-items: center;
 }
-header .downHeader .container nav .navList {
-  width: 100%;
+header .downHeader .container .row .navBar nav .navList {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
-header .downHeader .container nav .navList .navItem {
+header .downHeader .container .row .navBar nav .navList .navItem {
   padding: 0 20px;
   font-weight: 500;
   font-size: 16px;
@@ -108,7 +143,7 @@ header .downHeader .container nav .navList .navItem {
   cursor: pointer;
   position: relative;
 }
-header .downHeader .container nav .navList .navItem .pageList {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList {
   width: 210px;
   position: absolute;
   background-color: #ffffff;
@@ -123,12 +158,12 @@ header .downHeader .container nav .navList .navItem .pageList {
   top: 39px;
   transform: translateY(0);
 }
-header .downHeader .container nav .navList .navItem .pageList .pageItem {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList .pageItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-header .downHeader .container nav .navList .navItem .pageList .pageItem a {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList .pageItem a {
   font-size: 14px;
   text-transform: capitalize;
   height: 42px;
@@ -139,23 +174,23 @@ header .downHeader .container nav .navList .navItem .pageList .pageItem a {
   border-bottom: 1px solid rgba(242, 244, 248, 0.7);
   transition: 0.5s ease;
 }
-header .downHeader .container nav .navList .navItem .pageList .pageItem a:hover {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList .pageItem a:hover {
   color: #1cc3b2;
 }
-header .downHeader .container nav .navList .navItem .pageList #dropdown {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList #dropdown {
   position: relative;
 }
-header .downHeader .container nav .navList .navItem .pageList #dropdown a {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList #dropdown a {
   position: relative;
 }
-header .downHeader .container nav .navList .navItem .pageList #dropdown a i {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList #dropdown a i {
   position: absolute;
   left: 182px;
   top: 15px;
   font-size: 14px;
   color: #afb4bf;
 }
-header .downHeader .container nav .navList .navItem .pageList #dropdown .dropdownList {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList #dropdown .dropdownList {
   background-color: #fff;
   width: 210px;
   height: auto;
@@ -169,66 +204,123 @@ header .downHeader .container nav .navList .navItem .pageList #dropdown .dropdow
   transition: 0.5s ease;
   transform: translateY(0px);
 }
-header .downHeader .container nav .navList .navItem .pageList #dropdown .dropdownList .dropdownItem {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList #dropdown .dropdownList .dropdownItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 42px;
 }
-header .downHeader .container nav .navList .navItem .pageList #dropdown:hover .dropdownList {
+header .downHeader .container .row .navBar nav .navList .navItem .pageList #dropdown:hover .dropdownList {
   opacity: 1;
   visibility: visible;
   transform: translateY(-21px);
 }
-header .downHeader .container nav .navList .navItem a {
+header .downHeader .container .row .navBar nav .navList .navItem a {
   color: #2a303b;
   transition: 0.5s ease;
 }
-header .downHeader .container nav .navList .navItem a:hover {
+header .downHeader .container .row .navBar nav .navList .navItem a:hover {
   color: #afb4bf;
   font-weight: 500;
 }
-header .downHeader .container nav .navList .navItem a i {
+header .downHeader .container .row .navBar nav .navList .navItem a i {
   font-size: 14px;
   color: #afb4bf;
   margin-left: 2px;
 }
-header .downHeader .container nav .navList .navItem:hover .pageList {
+header .downHeader .container .row .navBar nav .navList .navItem:hover .pageList {
   visibility: visible;
   opacity: 1;
   transform: translateY(-5px);
 }
-header .downHeader .container nav .searchIcon {
-  margin-left: 24px;
-  transition: 0.5s ease;
-  cursor: pointer;
+header .downHeader .container .row .navBar nav .navList .navItem:last-child {
+  padding: 0;
+  margin-left: 20px;
 }
-header .downHeader .container nav .searchIcon:hover {
+header .downHeader .container .row .navBar nav .navList .icon:hover i {
+  transition: 0.5s ease;
   color: #1cc3b2;
 }
-header .downHeader .container nav .bookBtn {
-  width: 225px;
+header .downHeader .container .row .navBar .btn {
+  width: 163.63px;
   margin-left: 48px;
   text-align: center;
   height: 80px;
   padding: 0 30px;
   background-color: #1cc3b2;
   transition: 0.5s ease;
-}
-header .downHeader .container nav .bookBtn .btn {
   line-height: 80px;
   color: #ffffff;
   font-size: 16px;
   display: inline-block;
   font-weight: 500;
 }
-header .downHeader .container nav .bookBtn .btn i {
+header .downHeader .container .row .navBar .btn i {
   padding-left: 5px;
 }
-header .downHeader .container nav .bookBtn:hover {
+header .downHeader .container .row .navBar .btn:hover {
   background-color: #2a303b;
 }
+header .downHeader .container .row .barsIcon {
+  display: none;
+}
 
+@media (max-width: 1200px) {
+  header {
+    width: 100%;
+  }
+  header .downHeader .container .row .navBar nav .navList .navItem {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  header {
+    width: 100%;
+  }
+  header .infoBar .container .info {
+    display: none;
+  }
+  header .infoBar .container .responsInfo {
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  header .infoBar .container .responsInfo a {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  header .infoBar .container .responsInfo a i {
+    padding-right: 5px;
+    color: #1cc3b2;
+  }
+  header .infoBar .container .responsInfo a:hover {
+    color: #afb4bf;
+  }
+  header .downHeader .container .row {
+    height: 70px;
+  }
+  header .downHeader .container .row .logo {
+    width: 145px;
+  }
+  header .downHeader .container .row .barsIcon {
+    display: block;
+  }
+  header .downHeader .container .row .barsIcon i {
+    font-size: 30px;
+    color: #2a303b;
+  }
+  header .downHeader .container .row .navBar {
+    display: none;
+  }
+}
 main .homeArea {
   width: 100%;
   height: 300px;
@@ -286,6 +378,33 @@ main .homeArea .container .title .titleContent span {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
+}
+@media (max-width: 1200px) {
+  main .homeArea {
+    width: 100%;
+  }
+  main .homeArea .container .title h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 992px) {
+  main .homeArea {
+    width: 100%;
+  }
+  main .homeArea .container .title {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  main .homeArea {
+    height: 200px;
+  }
+  main .homeArea .container .title {
+    height: 200px;
+  }
+  main .homeArea .container .title h2 {
+    font-size: 24px;
+  }
 }
 main .singleBlog {
   width: 100%;
@@ -439,9 +558,6 @@ main .singleBlog .container .sinBlCont .left .blogForm h2 {
   margin-bottom: 30px;
   font-size: 22px;
 }
-main .singleBlog .container .sinBlCont .left .blogForm form {
-  padding: 0 15px;
-}
 main .singleBlog .container .sinBlCont .left .blogForm form input {
   width: 100%;
   height: 50px;
@@ -460,16 +576,14 @@ main .singleBlog .container .sinBlCont .left .blogForm form input:focus {
   border-color: #1cc3b2;
 }
 main .singleBlog .container .sinBlCont .left .blogForm form input::-moz-placeholder {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 1px;
+  font-size: 14px;
+  color: #6c757d;
+  font-family: "Poppins", sans-serif;
 }
 main .singleBlog .container .sinBlCont .left .blogForm form input::placeholder {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 1px;
+  font-size: 14px;
+  color: #6c757d;
+  font-family: "Poppins", sans-serif;
 }
 main .singleBlog .container .sinBlCont .left .blogForm form textarea {
   height: 150px;
@@ -481,7 +595,7 @@ main .singleBlog .container .sinBlCont .left .blogForm form textarea {
   margin-bottom: 30px;
   border: 1px solid #ebebeb;
   width: 100%;
-  resize: vertical;
+  resize: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 main .singleBlog .container .sinBlCont .left .blogForm form textarea:focus {
@@ -489,19 +603,19 @@ main .singleBlog .container .sinBlCont .left .blogForm form textarea:focus {
   border-color: #1cc3b2;
 }
 main .singleBlog .container .sinBlCont .left .blogForm form textarea::-moz-placeholder {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 1px;
+  font-size: 14px;
+  color: #6c757d;
+  font-family: "Poppins", sans-serif;
 }
 main .singleBlog .container .sinBlCont .left .blogForm form textarea::placeholder {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 1px;
+  font-size: 14px;
+  color: #6c757d;
+  font-family: "Poppins", sans-serif;
 }
 main .singleBlog .container .sinBlCont .left .blogForm form .blogBtn {
   width: 28.633%;
+  outline: none;
+  border: none;
   min-width: 18.271%;
   height: 46px;
   padding: 0 40px;
@@ -512,6 +626,7 @@ main .singleBlog .container .sinBlCont .left .blogForm form .blogBtn {
   background-color: #1cc3b2;
   cursor: pointer;
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
 }
 main .singleBlog .container .sinBlCont .left .blogForm form .blogBtn a {
   color: #fff;
@@ -520,6 +635,7 @@ main .singleBlog .container .sinBlCont .left .blogForm form .blogBtn:hover {
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   background-color: #fff;
   font-weight: 500;
+  color: #1cc3b2;
 }
 main .singleBlog .container .sinBlCont .left .blogForm form .blogBtn:hover a {
   color: #1cc3b2;
@@ -585,6 +701,9 @@ main .singleBlog .container .sinBlCont .right .cardBoxRight .newsLetter form inp
   letter-spacing: 1px;
 }
 main .singleBlog .container .sinBlCont .right .cardBoxRight .newsLetter .newsBtn {
+  width: 100%;
+  outline: none;
+  border: none;
   min-width: 18.271%;
   height: 46px;
   padding: 0 40px;
@@ -595,6 +714,7 @@ main .singleBlog .container .sinBlCont .right .cardBoxRight .newsLetter .newsBtn
   background-color: #1cc3b2;
   cursor: pointer;
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
 }
 main .singleBlog .container .sinBlCont .right .cardBoxRight .newsLetter .newsBtn a {
   color: #fff;
@@ -603,6 +723,7 @@ main .singleBlog .container .sinBlCont .right .cardBoxRight .newsLetter .newsBtn
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   background-color: #fff;
   font-weight: 500;
+  color: #1cc3b2;
 }
 main .singleBlog .container .sinBlCont .right .cardBoxRight .newsLetter .newsBtn:hover a {
   color: #1cc3b2;
@@ -660,7 +781,7 @@ main .singleBlog .container .sinBlCont .right .cardBoxRight .recent .recCardBox 
 }
 main .singleBlog .container .sinBlCont .right .cardBoxRight .tags {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 72px;
 }
 main .singleBlog .container .sinBlCont .right .cardBoxRight .tags h4 {
   font-size: 22px;
@@ -710,13 +831,71 @@ main .singleBlog .container .sinBlCont .right .cardBoxRight .instagram .instaImg
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+}
+main .singleBlog .container .sinBlCont .right .cardBoxRight .instagram .instaImg .instaList .instaItem {
+  width: 33%;
+  padding: 8px;
 }
 main .singleBlog .container .sinBlCont .right .cardBoxRight .instagram .instaImg .instaList .instaItem a {
+  display: inline-block;
   width: 100%;
+  height: 100%;
 }
 main .singleBlog .container .sinBlCont .right .cardBoxRight .instagram .instaImg .instaList .instaItem a img {
-  width: 102%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px), (max-width: 992px) {
+  main .singleBlog .container .sinBlCont {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .singleBlog .container .sinBlCont .left {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  main .singleBlog .container .sinBlCont .left .blogShare .shareLink span {
+    margin-right: 10px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogShare .shareLink .shareSocial {
+    gap: 10px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogShare .shareLink .shareSocial .socialItem a {
+    font-size: 16px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogComment {
+    margin-bottom: 0;
+  }
+  main .singleBlog .container .sinBlCont .left .blogComment h2 {
+    font-size: 24px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogComment .commentCard .person {
+    margin-right: 10px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogComment .commentCard .person img {
+    width: 50px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogComment .commentCard .cardCont h5 {
+    font-size: 16px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogComment .commentCard .cardCont p {
+    font-size: 14px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogComment .commentCard:nth-child(3) {
+    margin-left: 20px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogForm h2 {
+    font-size: 24px;
+  }
+  main .singleBlog .container .sinBlCont .left .blogForm form .blogBtn {
+    width: 40.563%;
+  }
+  main .singleBlog .container .sinBlCont .right {
+    flex: 0 0 74%;
+    max-width: 74%;
+  }
 }
 main .contact {
   margin-top: 100px;
@@ -769,7 +948,12 @@ main .contact .container .contactUs .contactTitle h6 a {
 main .contact .container .contactUs .contactTitle h6 a:hover {
   color: #1cc3b2;
 }
-main .contact .container .contactUs .contactBtn {
+main .contact .container .contactUs .resBtn {
+  width: 33%;
+}
+main .contact .container .contactUs .resBtn .contactBtn {
+  outline: none;
+  border: none;
   min-width: 18.271%;
   height: 46px;
   padding: 0 40px;
@@ -780,17 +964,31 @@ main .contact .container .contactUs .contactBtn {
   background-color: #1cc3b2;
   cursor: pointer;
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-main .contact .container .contactUs .contactBtn a {
   color: white;
 }
-main .contact .container .contactUs .contactBtn:hover {
+main .contact .container .contactUs .resBtn .contactBtn a {
+  color: white;
+}
+main .contact .container .contactUs .resBtn .contactBtn:hover {
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   background-color: white;
   font-weight: 500;
-}
-main .contact .container .contactUs .contactBtn:hover a {
   color: #1cc3b2;
+}
+main .contact .container .contactUs .resBtn .contactBtn:hover a {
+  color: #1cc3b2;
+}
+@media (max-width: 768px), (max-width: 992px) {
+  main .contact .container .contactUs {
+    height: 295px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .contact .container .contactUs .resBtn {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
 }
 main .partiner {
   width: 100%;
@@ -803,6 +1001,11 @@ main .partiner .container .partContent {
 }
 main .partiner .container .partContent a img {
   max-height: 50px;
+}
+@media (max-width: 768px), (max-width: 992px) {
+  main .partiner .container .partContent a img {
+    max-height: 30px;
+  }
 }
 
 footer {
@@ -958,4 +1161,59 @@ footer .container .footerBottom .socialList .socialItem a {
 }
 footer .container .footerBottom .socialList .socialItem a:hover {
   color: #fff;
+}
+
+@media (max-width: 768px), (max-width: 992px) {
+  footer .container .cardBox {
+    flex-wrap: wrap;
+  }
+  footer .container .cardBox .cardLogo {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 0 15px;
+  }
+  footer .container .cardBox .cardBlog {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 0 10px;
+  }
+  footer .container .cardBox .cardBlog .title {
+    font-size: 18px;
+  }
+  footer .container .cardBox .links {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 15px;
+    margin-bottom: 80px;
+  }
+  footer .container .cardBox .links .title {
+    font-size: 18px;
+  }
+  footer .container .cardBox .letter {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    padding: 0 7px;
+    margin-bottom: 80px;
+  }
+  footer .container .cardBox .letter .title {
+    font-size: 18px;
+  }
+  footer .container .footerBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .container .footerBottom .socialList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .container .footerBottom .socialList .socialItem {
+    padding-left: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
