@@ -333,11 +333,15 @@ header .downHeader .container .row .barsIcon {
     left: 0 !important;
   }
   header .downHeader .container .row .barsIcon .bar-menu .menu__btn {
-    position: fixed;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-right: 20px;
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
   }
   header .downHeader .container .row .barsIcon .bar-menu .menu__btn > span, header .downHeader .container .row .barsIcon .bar-menu .menu__btn > span::before, header .downHeader .container .row .barsIcon .bar-menu .menu__btn > span::after {
     display: block;
