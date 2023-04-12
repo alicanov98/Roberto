@@ -314,8 +314,6 @@ header {
                 width: 26px;
                 height: 26px;
                 cursor: pointer;
-            
-
                 & > span,
                 & > span::before,
                 & > span::after {
@@ -384,6 +382,47 @@ header {
                         font-size: 12px;
                       }
                     }
+                  }
+                }
+                .closeMenu{
+                  width: 100%;
+                  position: relative;
+                  top: -50px;
+                  right:  -250px;
+                  font-size: 24px;
+                }
+                .src{
+                  padding: 30px 0;
+                  margin-left: 24px;
+                  i{
+                    cursor: pointer;
+                    transition: .5s ease;
+                    
+                    &:hover{
+                      color: #1cc3b2;
+                    }
+                  }
+                }
+                .barBtn{
+                  margin-left: 24px;
+                  height: 50px;
+                  line-height: 50px;
+                  border-radius: 30px;
+                  padding: 0 30px;
+                  background-color: #1cc3b2;
+                  text-align: center;
+                  color: #ffffff;
+                  font-size: 16px;
+                  display: inline-block;
+                  font-weight: 500;
+                  cursor: pointer;
+                  transition: .5s ease;
+                  i{
+                    padding-left: 5px;
+                  }
+                  &:hover{
+                   color: #fff;
+                   background-color: #0e2737;
                   }
                 }
               }
