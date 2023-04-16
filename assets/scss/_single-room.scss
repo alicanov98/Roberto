@@ -1,0 +1,344 @@
+.homeArea {
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    .room {
+      width: 100%;
+      margin-bottom: 48px;
+      display: flex;
+      justify-content: space-between;
+      .roomTitle {
+        font-size: 30px;
+        color: #fff;
+        line-height: 1.3;
+        font-weight: 500;
+      }
+      h2 {
+        font-size: 36px;
+        color: #1cc3b2;
+        line-height: 1.3;
+        font-weight: 500;
+        span {
+          font-size: 18px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.roomDetails {
+  width: 100%;
+  padding-top: 100px;
+  .container {
+    .cardBoxRoom {
+      width: 100%;
+      display: flex;
+
+      .leftRoom {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        padding: 0 15px;
+        .roomContent {
+          width: 100%;
+          max-width: 100%;
+          margin-bottom: 50px;
+          .roomImg {
+            margin-bottom: 50px;
+            img {
+              max-width: 100%;
+            }
+          }
+          .roomFeatures {
+            width: 100%;
+            margin-bottom: 50px;
+            display: flex;
+            flex: wrap;
+            h6 {
+              flex: 0 0 25%;
+              max-width: 25%;
+              width: 25%;
+              padding: 30px 15px;
+              border-left: 1px solid #ebebeb;
+              border-top: 1px solid #ebebeb;
+              border-bottom: 1px solid #ebebeb;
+              text-align: center;
+              color: #afb4bf;
+              line-height: 1.5;
+              font-weight: 500;
+              font-size: 16px;
+              span {
+                font-size: 16px;
+                display: block;
+                color: #2a303b;
+                font-weight: 500;
+                text-align: center;
+              }
+              &:last-child {
+                border-right: 1px solid #ebebeb;
+              }
+            }
+          }
+          p {
+            line-height: 1.7;
+            color: #636a76;
+            font-size: 16px;
+            margin-bottom: 16px;
+          }
+          .textList {
+            margin-bottom: 15px;
+            .textItem {
+              color: #636a76;
+              display: block;
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .roomServices {
+          width: 100%;
+          margin-bottom: 50px;
+          h4 {
+            color: #2a303b;
+            line-height: 1.3;
+            font-weight: 500;
+            font-size: 24px;
+            margin-bottom: 8px;
+          }
+          .servicesList {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .servicesItem {
+              flex: 0 0 33.333333%;
+              max-width: 33.333333%;
+              width: 33.333333%;
+              margin-top: 30px;
+              line-height: 1.5;
+              color: #212529;
+              display: flex;
+              align-items: center;
+              img {
+                max-width: 100%;
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+        .roomReview {
+          h4 {
+            margin-bottom: 30px;
+            color: #2a303b;
+            line-height: 1.3;
+            font-weight: 500;
+            font-size: 24px;
+          }
+          .reviewCard {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 30px;
+            display: flex;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            .personImg {
+              flex: 0 0 70px;
+              max-width: 70px;
+              width: 70px;
+              margin-right: 30px;
+              img {
+                width: 70px;
+                border-radius: 50%;
+              }
+            }
+            .personComment {
+              border-left: 1px solid #ebebeb;
+              padding-left: 30px;
+              .topCont {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .topContLeft {
+                  margin-bottom: 10px;
+                  span {
+                    font-size: 14px;
+                    display: block;
+                    margin-bottom: 10px;
+                    color: #afb4bf;
+                    line-height: 1.5;
+                  }
+                  h6 {
+                    color: #1cc3b2;
+                    line-height: 1.3;
+                    font-weight: 500;
+                    font-size: 16px;
+                  }
+                }
+                .topContRight {
+                  i {
+                    color: #f5b917;
+                    font-size: 12px;
+                  }
+                }
+              }
+              p {
+                line-height: 1.7;
+                color: #636a76;
+              }
+            }
+          }
+        }
+      }
+      .roomCardDetails {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        .dataTitle {
+          height: auto;
+          font-size: 18px;
+          display: block;
+          margin-bottom: 15px;
+          line-height: 1.5;
+          color: #212529;
+          display: flex;
+          align-items: left;
+        }
+        .roomInputDate {
+          display: flex;
+          .date {
+            width: 100%;
+            height: 50px;
+            font-size: 14px;
+            padding: 0 20px;
+            border: 1px solid #ced4da;
+            outline: none;
+            &:focus {
+              border-color: #1cc3b2;
+            }
+          }
+          .number {
+            width: 100%;
+            height: 50px;
+            font-size: 14px;
+            padding: 0 20px;
+            outline: none;
+            border: solid 1px #e8e8e8;
+            &:focus {
+              border-color: #495057;
+            }
+          }
+        }
+        .roomDetailBtn {
+          width: 100%;
+          margin-top: 30px;
+          button {
+            width: 100%;
+            @include primaryBtn(#1cc3b2, #ffffff);
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .homeArea {
+    .container {
+      .room {
+        .roomTitle {
+          font-size: 24px;
+        }
+        h2 {
+          font-size: 14px;
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .roomDetails {
+    .container {
+      .cardBoxRoom {
+        .leftRoom {
+          .roomContent {
+            .roomFeatures {
+              flex-wrap: wrap;
+              h6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+                width: 50%;
+                font-size: 13px;
+                padding: 20px 10px;
+                span {
+                  font-size: 13px;
+                }
+                &:nth-child(2) {
+                  border-right: 1px solid #ebebeb;
+                }
+              }
+            }
+          }
+          .roomServices {
+            .servicesList {
+              .servicesItem {
+                flex: 0 0 100%;
+                max-width: 100%;
+                width: 100%;
+              }
+            }
+          }
+          .roomReview {
+            margin-bottom: 100px;
+            .reviewCard {
+              .personImg {
+                flex: 0 0 50px;
+                max-width: 50px;
+                width: 50px;
+                margin-right: 15px;
+                img {
+                  width: 50px;
+                }
+              }
+              .personComment { 
+                padding-left: 15px;
+                .topCont {
+                  .topContLeft {
+                    span {
+                      font-size: 12px;
+                    }
+                    h6 {
+                      font-size: 14px;
+                    }
+                  }
+                  .topContRight {
+                    i {
+                      font-size: 10px;
+                    }
+                  }
+                }
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+}
+    }
+}
+}
+@media (max-width: 992px) {
+  .roomDetails {
+    .container {
+      .cardBoxRoom {
+        flex-direction: column;
+        .leftRoom {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

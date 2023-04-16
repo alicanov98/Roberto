@@ -282,7 +282,12 @@ header {
           display: flex;
           justify-content: space-between;
           .logo {
-            width: 145px;
+            max-width: 90px;
+            margin-right: 15px;
+            img{
+              max-width: 100%;
+            height: auto;
+            }
           }
           .barsIcon {
             display: block;

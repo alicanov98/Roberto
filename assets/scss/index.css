@@ -310,7 +310,12 @@ header .downHeader .container .row .barsIcon {
     justify-content: space-between;
   }
   header .downHeader .container .row .logo {
-    width: 145px;
+    max-width: 90px;
+    margin-right: 15px;
+  }
+  header .downHeader .container .row .logo img {
+    max-width: 100%;
+    height: auto;
   }
   header .downHeader .container .row .barsIcon {
     display: block;
@@ -1120,8 +1125,8 @@ main .partiner .container .partContent a img {
     width: 40.563%;
   }
   main .singleBlog .container .sinBlCont .right {
-    flex: 0 0 74%;
-    max-width: 74%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 @media (max-width: 768px), (max-width: 992px) {
@@ -1141,6 +1146,333 @@ main .partiner .container .partContent a img {
 @media (max-width: 768px), (max-width: 992px) {
   .partiner .container .partContent a img {
     max-height: 30px;
+  }
+}
+.homeArea .container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.homeArea .container .room {
+  width: 100%;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.homeArea .container .room .roomTitle {
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.homeArea .container .room h2 {
+  font-size: 36px;
+  color: #1cc3b2;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.homeArea .container .room h2 span {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.roomDetails {
+  width: 100%;
+  padding-top: 100px;
+}
+.roomDetails .container .cardBoxRoom {
+  width: 100%;
+  display: flex;
+}
+.roomDetails .container .cardBoxRoom .leftRoom {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  padding: 0 15px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomImg {
+  margin-bottom: 50px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomImg img {
+  max-width: 100%;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomFeatures {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex: wrap;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomFeatures h6 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  width: 25%;
+  padding: 30px 15px;
+  border-left: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+  color: #afb4bf;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomFeatures h6 span {
+  font-size: 16px;
+  display: block;
+  color: #2a303b;
+  font-weight: 500;
+  text-align: center;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomFeatures h6:last-child {
+  border-right: 1px solid #ebebeb;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent p {
+  line-height: 1.7;
+  color: #636a76;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent .textList {
+  margin-bottom: 15px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomContent .textList .textItem {
+  color: #636a76;
+  display: block;
+  margin-bottom: 15px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomServices {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomServices h4 {
+  color: #2a303b;
+  line-height: 1.3;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomServices .servicesList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomServices .servicesList .servicesItem {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  width: 33.333333%;
+  margin-top: 30px;
+  line-height: 1.5;
+  color: #212529;
+  display: flex;
+  align-items: center;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomServices .servicesList .servicesItem img {
+  max-width: 100%;
+  padding-right: 10px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview h4 {
+  margin-bottom: 30px;
+  color: #2a303b;
+  line-height: 1.3;
+  font-weight: 500;
+  font-size: 24px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard:last-child {
+  margin-bottom: 0;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personImg {
+  flex: 0 0 70px;
+  max-width: 70px;
+  width: 70px;
+  margin-right: 30px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personImg img {
+  width: 70px;
+  border-radius: 50%;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment {
+  border-left: 1px solid #ebebeb;
+  padding-left: 30px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment .topCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment .topCont .topContLeft {
+  margin-bottom: 10px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment .topCont .topContLeft span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+  color: #afb4bf;
+  line-height: 1.5;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment .topCont .topContLeft h6 {
+  color: #1cc3b2;
+  line-height: 1.3;
+  font-weight: 500;
+  font-size: 16px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment .topCont .topContRight i {
+  color: #f5b917;
+  font-size: 12px;
+}
+.roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment p {
+  line-height: 1.7;
+  color: #636a76;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .dataTitle {
+  height: auto;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #212529;
+  display: flex;
+  align-items: left;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomInputDate {
+  display: flex;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomInputDate .date {
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  padding: 0 20px;
+  border: 1px solid #ced4da;
+  outline: none;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomInputDate .date:focus {
+  border-color: #1cc3b2;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomInputDate .number {
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  padding: 0 20px;
+  outline: none;
+  border: solid 1px #e8e8e8;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomInputDate .number:focus {
+  border-color: #495057;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomDetailBtn {
+  width: 100%;
+  margin-top: 30px;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomDetailBtn button {
+  width: 100%;
+  outline: none;
+  border: none;
+  min-width: 18.271%;
+  height: 46px;
+  padding: 0 40px;
+  line-height: 46px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #1cc3b2;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #ffffff;
+  border-radius: 30px;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomDetailBtn button a {
+  color: #ffffff;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomDetailBtn button:hover {
+  box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+  background-color: #ffffff;
+  font-weight: 500;
+  color: #1cc3b2;
+}
+.roomDetails .container .cardBoxRoom .roomCardDetails .roomDetailBtn button:hover a {
+  color: #1cc3b2;
+}
+
+@media (max-width: 768px) {
+  .homeArea .container .room .roomTitle {
+    font-size: 24px;
+  }
+  .homeArea .container .room h2 {
+    font-size: 14px;
+  }
+  .homeArea .container .room h2 span {
+    font-size: 12px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomFeatures {
+    flex-wrap: wrap;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomFeatures h6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+    font-size: 13px;
+    padding: 20px 10px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomFeatures h6 span {
+    font-size: 13px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomContent .roomFeatures h6:nth-child(2) {
+    border-right: 1px solid #ebebeb;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomServices .servicesList .servicesItem {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomReview {
+    margin-bottom: 100px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personImg {
+    flex: 0 0 50px;
+    max-width: 50px;
+    width: 50px;
+    margin-right: 15px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personImg img {
+    width: 50px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment {
+    padding-left: 15px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment .topCont .topContLeft span {
+    font-size: 12px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment .topCont .topContLeft h6 {
+    font-size: 14px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment .topCont .topContRight i {
+    font-size: 10px;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom .roomReview .reviewCard .personComment p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .roomDetails .container .cardBoxRoom {
+    flex-direction: column;
+  }
+  .roomDetails .container .cardBoxRoom .leftRoom {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 footer {
